@@ -13,4 +13,69 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: $dark-color;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10%;
+
+    .logo {
+        cursor: pointer;
+    }
+
+    .nav__links {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            padding: 0 2rem;
+
+            a {
+                position: relative;
+                width: 90px;
+                height: 40px;
+                padding: 1rem 1rem;
+                font-size: 1.6rem;
+                color: $text-color;
+                text-decoration: none;
+                text-align: center;
+                line-height: 40px;
+                transition: all .3s ease;
+            }
+
+            a::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 0;
+                left: 0;
+                background-color: $main-color;
+                z-index: -1;
+                transition: all .3s ease;
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+
+            a:hover {
+                color: $active-color;
+            }
+        }
+    }
+
+    button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        color: $text-color;
+        text-transform: uppercase;
+        background: none;
+        border: 1px solid $text-color;
+        padding: 1rem 1rem;
+        cursor: pointer;
+    }
+}
+
