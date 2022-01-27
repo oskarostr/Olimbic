@@ -52,8 +52,8 @@ header {
                 height: 100%;
                 width: 0;
                 left: 0;
-                background-color: $main-color;
                 z-index: -1;
+                background-color: $active-color;
                 transition: all .3s ease;
             }
 
@@ -62,20 +62,27 @@ header {
             }
 
             a:hover {
-                color: $active-color;
+                color: $dark-color;
             }
         }
     }
 
     button {
+        position: relative;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
         color: $text-color;
         text-transform: uppercase;
-        background: none;
+        background-color: $secondary-color;
         border: 1px solid $text-color;
         padding: 1rem 1rem;
+        transition: all .3s ease;
         cursor: pointer;
+    }
+
+    button:hover {
+        color: $text-color;
+        background-color: $dark-color;
     }
 }
 
