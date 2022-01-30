@@ -17,10 +17,16 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 86px;
     display: flex;
     justify-content: space-between;
+    background-color: $dark-color;
     align-items: center;
     padding: 3rem 10%;
+    z-index: 100;
 
     .logo {
         cursor: pointer;
@@ -71,11 +77,12 @@ header {
         position: relative;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.6rem;
-        color: $text-color;
+        color: $dark-color;
         text-transform: uppercase;
-        background-color: $secondary-color;
-        border: 1px solid $text-color;
-        padding: 1rem 1rem;
+        background-color: $active-color;
+        border: 1px solid $dark-color;
+        padding: 0.9rem 1rem;
+        letter-spacing: 1px;
         transition: all .3s ease;
         cursor: pointer;
     }
@@ -83,6 +90,40 @@ header {
     button:hover {
         color: $text-color;
         background-color: $dark-color;
+        border-color: $text-color
     }
 }
 
+
+.hero-img {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/the-ball-g5d71c559c_1920.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        z-index: -10;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+        height: 100%;
+        color: $text-color;
+        font-size: 26px;
+        z-index: 20;
+    }
+}
+
+.scroll {
+    height: 100vh;
+    background-color: #ddd;
+}

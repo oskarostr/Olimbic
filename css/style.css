@@ -12,20 +12,26 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #1b2223;
+  background-color: #161a1d;
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #161a1d;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 10%;
+  z-index: 100;
 }
 
 header .logo {
@@ -62,7 +68,7 @@ header .nav__links li a::before {
   width: 0;
   left: 0;
   z-index: -1;
-  background-color: #4FBDBA;
+  background-color: #52b788;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -72,18 +78,19 @@ header .nav__links li a:hover::before {
 }
 
 header .nav__links li a:hover {
-  color: #1b2223;
+  color: #161a1d;
 }
 
 header button {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  color: #edf0f1;
+  color: #161a1d;
   text-transform: uppercase;
-  background-color: #35858B;
-  border: 1px solid #edf0f1;
-  padding: 1rem 1rem;
+  background-color: #52b788;
+  border: 1px solid #161a1d;
+  padding: 0.9rem 1rem;
+  letter-spacing: 1px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   cursor: pointer;
@@ -91,6 +98,46 @@ header button {
 
 header button:hover {
   color: #edf0f1;
-  background-color: #1b2223;
+  background-color: #161a1d;
+  border-color: #edf0f1;
+}
+
+.hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/the-ball-g5d71c559c_1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.hero-img .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -10;
+}
+
+.hero-img .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  color: #edf0f1;
+  font-size: 26px;
+  z-index: 20;
+}
+
+.scroll {
+  height: 100vh;
+  background-color: #ddd;
 }
 /*# sourceMappingURL=style.css.map */
