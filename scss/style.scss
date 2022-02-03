@@ -18,19 +18,16 @@ body {
 
 header {
     position: fixed;
-    top: 0;
+    bottom: 0;
     width: 100%;
     height: 86px;
     display: flex;
-    justify-content: space-between;
-    background-color: $dark-color;
+    justify-content: center;
     align-items: center;
-    padding: 3rem 10%;
+    flex-wrap: wrap;
+    padding: 2rem 10%;
+    background-color: $dark-color;
     z-index: 100;
-
-    .logo {
-        cursor: pointer;
-    }
 
     .nav__links {
         list-style: none;
@@ -97,8 +94,12 @@ header {
 
 .hero-img {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
-    background-image: url('../img/the-ball-g5d71c559c_1920.jpg');
+    background-image: url('../img/background-image.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -110,6 +111,10 @@ header {
         height: 100%;
         background-color: rgba(0, 0, 0, .6);
         z-index: -10;
+    }
+
+    .main-logo {
+        display: block;
     }
 
     .text {

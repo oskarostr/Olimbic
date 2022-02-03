@@ -17,25 +17,23 @@ body {
 
 header {
   position: fixed;
-  top: 0;
+  bottom: 0;
   width: 100%;
   height: 86px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #161a1d;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 10%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 10%;
+  background-color: #161a1d;
   z-index: 100;
-}
-
-header .logo {
-  cursor: pointer;
 }
 
 header .nav__links {
@@ -68,7 +66,7 @@ header .nav__links li a::before {
   width: 0;
   left: 0;
   z-index: -1;
-  background-color: #52b788;
+  background-color: #3AB0E2;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -87,7 +85,7 @@ header button {
   font-size: 1.6rem;
   color: #161a1d;
   text-transform: uppercase;
-  background-color: #52b788;
+  background-color: #3AB0E2;
   border: 1px solid #161a1d;
   padding: 0.9rem 1rem;
   letter-spacing: 1px;
@@ -104,8 +102,21 @@ header button:hover {
 
 .hero-img {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
-  background-image: url("../img/the-ball-g5d71c559c_1920.jpg");
+  background-image: url("../img/background-image.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -118,6 +129,10 @@ header button:hover {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -10;
+}
+
+.hero-img .main-logo {
+  display: block;
 }
 
 .hero-img .text {
