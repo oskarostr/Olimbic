@@ -154,6 +154,59 @@ section {
     }
 }
 
+.about {
+    .about-box {
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+            height: 582px;
+            margin: 0 2rem 5rem 5rem;
+        }
+
+        p {
+            font-size: 24px;
+            color: $text-color;
+        }
+    }
+}
+
+.offer {
+    .offer-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 80%;
+
+        .box {
+            width: 350px;
+            height: 500px;
+            background-color: #fff;
+            margin: 1rem 2.5rem;
+            border-radius: 15px;
+            box-shadow: 4px 7px 10px rgba(0, 0, 0, .3);
+            transition: all .3s ease;
+
+            h4 {
+                text-align: center;
+                font-weight: 400;
+                font-size: 28px;
+                margin: 2rem 0;
+            }
+        }
+
+        .box:hover {
+            transform: scale(105%);
+            box-shadow: 6px 9px 12px rgba(0, 0, 0, .3);
+        }
+    }
+}
+
 .contact {
 
     .contact-box {

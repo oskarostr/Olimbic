@@ -177,6 +177,78 @@ section h3 {
   font-weight: 400;
 }
 
+.about .about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.about .about-box img {
+  height: 582px;
+  margin: 0 2rem 5rem 5rem;
+}
+
+.about .about-box p {
+  font-size: 24px;
+  color: #edf0f1;
+}
+
+.offer .offer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 80%;
+}
+
+.offer .offer-box .box {
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  margin: 1rem 2.5rem;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 7px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.offer .offer-box .box h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  margin: 2rem 0;
+}
+
+.offer .offer-box .box:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-box-shadow: 6px 9px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 6px 9px 12px rgba(0, 0, 0, 0.3);
+}
+
 .contact .contact-box {
   height: 100%;
   display: -webkit-box;
