@@ -31,7 +31,7 @@ body {
 
 header {
     position: fixed;
-    bottom: 0;
+    top: 0;
     width: 100%;
     height: 86px;
     display: flex;
@@ -104,40 +104,41 @@ header {
     }
 }
 
-
-.hero-img {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-image: url('../img/background-image.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: 0;
-
-    .shadow {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .6);
-        z-index: -10;
-    }
-
-    .main-logo {
-        display: block;
-    }
-
-    .text {
+.hero{
+    .hero-img {
+        position: relative;
         display: flex;
-        justify-content: center;   
+        justify-content: center;
         align-items: center;
-        height: 100%;
-        color: $text-color;
-        font-size: 26px;
-        z-index: 20;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url('../img/main-bgc.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+    
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .6);
+            z-index: -10;
+        }
+    
+        .main-logo {
+            display: block;
+        }
+    
+        .text {
+            display: flex;
+            justify-content: center;   
+            align-items: center;
+            height: 100%;
+            color: $text-color;
+            font-size: 26px;
+            z-index: 20;
+        }
     }
 }
 
@@ -156,53 +157,147 @@ section {
 
 .about {
     .about-box {
+        position: relative;
         display: flex;
         height: 80%;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        background-image: url('../img/puzzle-orange.png');
+        background-position: center;
+        background-size: cover;
+        margin-top: 1rem;
+        border-radius: 5px;
+        z-index: 0;
 
-        img {
-            height: 582px;
-            margin: 0 2rem 5rem 5rem;
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: -10;
         }
 
-        p {
-            font-size: 24px;
-            color: $text-color;
+        .text {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                height: 582px;
+                margin: 0 2rem 5rem 5rem;
+            }
+    
+            p {
+                font-size: 24px;
+                color: $dark-text-color;
+            }
         }
     }
 }
 
 .offer {
-    .offer-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 80%;
 
-        .box {
-            width: 350px;
-            height: 500px;
-            background-color: #fff;
-            margin: 1rem 2.5rem;
-            border-radius: 15px;
-            box-shadow: 4px 7px 10px rgba(0, 0, 0, .3);
-            transition: all .3s ease;
+    .hero-img {
+        height: 100%;
+        position: relative;
+        background-image: url('../img/puzzle-yellow.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
 
-            h4 {
-                text-align: center;
-                font-weight: 400;
-                font-size: 28px;
-                margin: 2rem 0;
-            }
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: -10;
         }
 
-        .box:hover {
-            transform: scale(105%);
-            box-shadow: 6px 9px 12px rgba(0, 0, 0, .3);
+        .content {
+            height: 100%;
+
+            .offer-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                height: 80%;
+        
+                .box {
+                    width: 350px;
+                    height: 500px;
+                    background-color: #fff;
+                    margin: 1rem 2.5rem;
+                    border-radius: 15px;
+                    box-shadow: 4px 7px 10px rgba(0, 0, 0, .3);
+                    transition: all .3s ease;
+        
+                    h4 {
+                        text-align: center;
+                        font-weight: 400;
+                        font-size: 28px;
+                        margin: 2rem 0;
+                        color: $dark-text-color;
+                    }
+                }
+        
+                .box:hover {
+                    transform: scale(105%);
+                    box-shadow: 6px 9px 12px rgba(0, 0, 0, .3);
+                }
+            }
+        }
+    }
+}
+
+.recomendation {
+
+    .hero-img {
+        height: 100%;
+        position: relative;
+        background-image: url('../img/puzzle-dark-blue.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 0;
+
+        .shadow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .3);
+            z-index: -10;
+        }
+
+        .content {
+            height: 100%;
+    
+            .container {
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+        
+                .box {
+                    width: 260px;
+                    height: 420px;
+                    margin: 0 1rem 10rem 1rem;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    box-shadow: 3px 6px 9px rgba(0, 0, 0, .3);
+                    transition: all .3s ease;
+                }
+        
+                .box:hover {
+                    transform: scale(102%);
+                    box-shadow: 5px 7px 10px rgba(0, 0, 0, .3);
+                }
+            }
         }
     }
 }
@@ -210,12 +305,13 @@ section {
 .contact {
 
     .contact-box {
-        height: 100%;
+        height: 80vh;
         display: flex;
-        //background-color: #fff;
+        background-color: #fff;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 10rem;
 
         p {
             font-size: 24px;
@@ -231,13 +327,7 @@ section {
         }
 
         a:hover {
-            transform: scale(110%);
             color: $active-color;
         }
     }
-}
-
-.scroll {
-    height: 100vh;
-    background-color: #ddd;
 }
