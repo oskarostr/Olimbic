@@ -199,8 +199,12 @@ body {
             z-index: 20;
 
             h1 {
-                font-size: 92px;
+                font-size: 88px;
                 margin: 5rem 0;
+            }
+
+            p {
+                font-size: 28px;
             }
         }
     }
@@ -255,8 +259,15 @@ section {
     
             p {
                 font-size: 24px;
-                padding: 0 5rem 0 0;
                 color: $dark-text-color;
+                width: 500px;
+                height: 450px;
+                text-align: center;
+                padding: 5rem 2rem;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                overflow: hidden;
+                background-color: rgba(255, 255, 255, .9);
             }
         }
     }
@@ -379,13 +390,20 @@ section {
 
             img {
                 width: 623px;
-                margin: 0 5rem 0 5rem;
+                margin: 0 1rem 0 4rem;
             }
     
             p {
                 font-size: 24px;
-                padding-left: 7rem;
-                color: $text-color;
+                color: $dark-text-color;
+                width: 500px;
+                height: 450px;
+                text-align: center;
+                padding: 5rem 2rem;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                overflow: hidden;
+                background-color: rgba(255, 255, 255, .9);
             }
         }
     }
@@ -498,10 +516,12 @@ section {
                 background-color: $dark-color;
                 display: flex;
                 flex-direction: column;
+                justify-content: flex-start;
                 align-items: center;
 
                 li {
                     text-align: center;
+                    padding: 1rem 0;
                 }
             }
         }
@@ -515,11 +535,11 @@ section {
         .hero-img {
             .text {
                 h1 {
-                    font-size: 76px;
+                    font-size: 72px;
                 }
 
                 p {
-                    font-size: 26px;
+                    font-size: 24px;
                 }
             }
         }
@@ -529,11 +549,13 @@ section {
         .about-box {
             .text {
                 img {
-                    height: 522px;
+                    height: 472px;
                 }
 
                 p {
-                    font-size: 22px;
+                    font-size: 20px;
+                    width: 400px;
+                    height: 425px;
                 }
             }
         }
@@ -542,12 +564,17 @@ section {
     .education {
         .education-box {
             .text {
+                flex-direction: column-reverse;
                 p {
-                    font-size: 20px;
+                    font-size: 18px;
+                    width: 550px;
+                    height: 225px;
+                    padding-top: 3rem;
                 }
 
                 img {
-                    width: 512px;
+                    padding-bottom: 2rem;
+                    width: 452px;
                 }
             }
         }
@@ -577,11 +604,11 @@ section {
         .hero-img {
             .text {
                 h1 {
-                    font-size: 66px;
+                    font-size: 60px;
                 }
 
                 p {
-                    font-size: 26px;
+                    font-size: 24px;
                 }
             }
         }
@@ -590,12 +617,17 @@ section {
     .about {
         .about-box {
             .text {
+                flex-direction: column;
                 img {
-                    height: 424px;
+                    height: 402px;
+                    padding-bottom: 1.5rem;
                 }
 
                 p {
-                    font-size: 19px;
+                    font-size: 18px;
+                    width: 500px;
+                    height: 235px;
+                    padding-top: 3rem;
                 }
             }
         }
@@ -639,11 +671,11 @@ section {
         .hero-img {
             .text {
                 h1 {
-                    font-size: 58px;
+                    font-size: 40px;
                 }
 
                 p {
-                    font-size: 26px;
+                    font-size: 18px;
                 }
             }
         }
@@ -653,11 +685,14 @@ section {
         .about-box {
             .text {
                 img {
-                    height: 522px;
+                    height: 338px;
                 }
 
                 p {
-                    font-size: 22px;
+                    font-size: 16px;
+                    width: 310px;
+                    height: 275px;
+                    padding-top: 2rem;
                 }
             }
         }
@@ -667,11 +702,14 @@ section {
         .education-box {
             .text {
                 p {
-                    font-size: 20px;
+                    font-size: 16px;
+                    width: 350px;
+                    height: 275px;
                 }
 
                 img {
-                    width: 512px;
+                    width: 328px;
+                    padding-top: 1rem;
                 }
             }
         }
