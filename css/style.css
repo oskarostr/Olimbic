@@ -311,9 +311,9 @@ section h3 {
 }
 
 .about .about-box .text p {
-  font-size: 24px;
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.7);
-  width: 500px;
+  width: 425px;
   height: 450px;
   text-align: center;
   padding: 5rem 2rem;
@@ -366,7 +366,7 @@ section h3 {
 }
 
 .offer .hero-img .content .offer-box .box {
-  width: 50%;
+  width: 900px;
   background-color: #fff;
   margin: 1rem 2.5rem;
   border-radius: 15px;
@@ -476,14 +476,14 @@ section h3 {
 }
 
 .education .education-box .text img {
-  width: 623px;
-  margin: 0 1rem 0 4rem;
+  width: 582px;
+  margin: 0 1rem 0 3rem;
 }
 
 .education .education-box .text p {
-  font-size: 24px;
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.7);
-  width: 500px;
+  width: 400px;
   height: 450px;
   text-align: center;
   padding: 5rem 2rem;
@@ -652,12 +652,18 @@ section h3 {
     font-size: 24px;
   }
   .about .about-box .text img {
-    height: 472px;
+    height: 468px;
   }
   .about .about-box .text p {
-    font-size: 20px;
-    width: 400px;
-    height: 425px;
+    font-size: 18px;
+    width: 325px;
+    height: 400px;
+  }
+  .offer .hero-img .content .offer-box .box {
+    width: 725px;
+  }
+  .offer .hero-img .content .offer-box .box h4 {
+    font-size: 26px;
   }
   .education .education-box .text {
     -webkit-box-orient: vertical;
@@ -669,11 +675,11 @@ section h3 {
     font-size: 18px;
     width: 550px;
     height: 225px;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .education .education-box .text img {
+    width: 458px;
     padding-bottom: 2rem;
-    width: 452px;
   }
   .recomendation .hero-img .content .container .box {
     height: 350px;
@@ -707,11 +713,34 @@ section h3 {
     height: 235px;
     padding-top: 3rem;
   }
+  .offer .hero-img .content .offer-box .box {
+    width: 550px;
+  }
+  .offer .hero-img .content .offer-box .box h4 {
+    font-size: 24px;
+  }
+  .offer .hero-img .content .offer-box .box-1 {
+    height: 180px;
+  }
+  .offer .hero-img .content .offer-box .box-1 ul p {
+    font-size: 17px;
+  }
+  .offer .hero-img .content .offer-box .box-2 {
+    height: 420px;
+  }
+  .offer .hero-img .content .offer-box .box-2 ul p {
+    font-size: 16px;
+    padding-top: .3rem;
+  }
   .education .education-box .text p {
-    font-size: 20px;
+    font-size: 18px;
+    width: 425px;
+    height: 250px;
+    padding-top: 2rem;
   }
   .education .education-box .text img {
-    width: 512px;
+    width: 420px;
+    padding-top: 1rem;
   }
   .recomendation .hero-img .content .container .box {
     height: 350px;
@@ -738,14 +767,39 @@ section h3 {
     height: 275px;
     padding-top: 2rem;
   }
+  .offer .hero-img .content .offer-box .box {
+    width: 300px;
+  }
+  .offer .hero-img .content .offer-box .box h4 {
+    font-size: 18px;
+  }
+  .offer .hero-img .content .offer-box .box-1 {
+    height: 180px;
+  }
+  .offer .hero-img .content .offer-box .box-1 ul {
+    padding-top: 1rem;
+  }
+  .offer .hero-img .content .offer-box .box-1 ul p {
+    font-size: 14px;
+  }
+  .offer .hero-img .content .offer-box .box-2 {
+    height: 400px;
+  }
+  .offer .hero-img .content .offer-box .box-2 ul {
+    padding: 0 3rem;
+  }
+  .offer .hero-img .content .offer-box .box-2 ul p {
+    font-size: 13px;
+    padding: .2rem;
+  }
   .education .education-box .text p {
-    font-size: 16px;
+    font-size: 14px;
     width: 350px;
-    height: 275px;
+    height: 200px;
+    padding-top: 2rem;
   }
   .education .education-box .text img {
-    width: 328px;
-    padding-top: 1rem;
+    width: 322px;
   }
   .recomendation .hero-img .content .container .box {
     height: 350px;
