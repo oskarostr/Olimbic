@@ -481,7 +481,7 @@ section h3 {
 }
 
 .education .education-box .text p {
-  font-size: 22px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.7);
   width: 400px;
   height: 450px;
@@ -532,8 +532,7 @@ section h3 {
 }
 
 .recomendation .hero-img .content .container .box {
-  width: 280px;
-  height: 520px;
+  height: 450px;
   margin: 0 1rem 10rem 1rem;
   background-color: #fff;
   border-radius: 5px;
@@ -554,14 +553,14 @@ section h3 {
 
 .recomendation .hero-img .content .container .box p {
   font-size: 14px;
-  margin: 1rem 2rem;
+  margin: 2rem 3rem;
+  letter-spacing: .5px;
+  text-align: center;
 }
 
 .recomendation .hero-img .content .container .box:hover {
-  -webkit-transform: scale(102%);
-          transform: scale(102%);
-  -webkit-box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(98%);
+          transform: scale(98%);
 }
 
 .contact .contact-box {
@@ -754,10 +753,10 @@ section h3 {
     font-size: 38px;
   }
   .education .education-box .text p {
-    font-size: 18px;
+    font-size: 15px;
     width: 425px;
     height: 250px;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .education .education-box .text img {
     width: 420px;
@@ -826,13 +825,13 @@ section h3 {
     font-size: 36px;
   }
   .education .education-box .text p {
-    font-size: 14px;
-    width: 350px;
-    height: 200px;
-    padding-top: 2rem;
+    font-size: 13px;
+    width: 375px;
+    height: 225px;
+    padding-top: 1rem;
   }
   .education .education-box .text img {
-    width: 322px;
+    width: 384px;
   }
   .recomendation .hero-img .content h3 {
     font-size: 36px;

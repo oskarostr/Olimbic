@@ -3,6 +3,7 @@ $('.carousel').slick({
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 10000,
     mobileFirst: true,
     responsive: [
         {
