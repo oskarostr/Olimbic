@@ -2,6 +2,7 @@ $('.carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    dots: false,
     autoplay: true,
     autoplaySpeed: 10000,
     mobileFirst: true,
